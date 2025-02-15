@@ -1,0 +1,283 @@
+/****** GOOGLEFONTS ******/
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/****** VARIABLES ******/
+:root {
+    --color-primary: #db2777;
+    --text-ligth: #ececec;
+    --bg-primary-dark: #141b24;
+}
+
+/****** BOOTSTRAP REWRITE ******/
+a {
+    text-decoration: none !important;
+}
+
+.bg-dark {
+    background-color: #0f141a !important;
+}
+
+.navbar-brand {
+    width: 100px !important;
+}
+
+.accordion-item {
+    color: #cecece;
+    background-color: #161e29;
+    border: var(--bs-accordion-border-width) solid #111924;
+}
+
+.accordion-header {
+    background-color: transparent !important;
+    margin-bottom: 5px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #c53775;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #161e29;
+}
+
+.accordion-button {
+    color: var(--text-ligth);
+    background: transparent !important;
+}
+
+/* .collapsed {
+    background-color: #1d2633;
+} */
+
+.accordion-button::after {
+    display: none;
+}
+
+/****** GENERAL ******/
+body {
+    font-family: "Montserrat", serif !important;
+    color: var(--text-ligth);
+}
+
+::selection {
+    color: var(--text-ligth);
+    background-color: var(--color-primary);
+}
+
+input {
+    border: 0;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    background-color: #1e2631;
+    border: 1px solid #1e2631;
+    color: var(--text-ligth);
+    transition: 200ms;
+}
+
+input:focus-visible {
+    outline: 0;
+    border: 1px solid #db2777;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::placeholder{
+    color: #454e5b;
+  }
+
+.niconne {
+    font-family: "Niconne", serif;
+    letter-spacing: 0.4rem;
+    font-size: 3.8rem;
+}
+
+.niconne::first-letter {
+    color: var(--color-primary);
+} 
+
+.niconne-h1 {
+    font-family: "Niconne", serif;
+    font-size: 64px;
+    line-height: 1;
+}  
+
+.niconne-h1 > span {
+    position: relative;
+    left: -7px;
+    color: var(--color-primary);
+}
+
+a {
+    color: var(--text-ligth) !important;
+    transition: 150ms;
+}
+
+a:hover {
+    color: var(--color-primary) !important;
+}
+
+/****** HEADER ******/
+header button {
+    padding: 10px !important;
+    border: none !important;
+}
+
+.nav-item a {
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+/****** HERO ******/
+.hero {
+    background-image: url('../images/hero.jpg');
+    height: 620px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 92px;
+}
+
+.looking {
+    font-size: 1.4rem;
+}
+
+.btn-pr {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color:#fff;
+}
+
+.btn-pr:hover {
+    border: 2px solid var(--color-primary);
+}
+
+.btn-pr-outline {
+    border:2px solid var(--color-primary);
+    color:#fff;
+}
+
+.btn-pr-outline:hover {
+    background-color: var(--color-primary);
+}
+
+.hero-form {
+    width: 400px;
+    border-radius: 1rem;
+    background: rgb(15,20,26);
+    background: linear-gradient(270deg, rgba(15,20,26,1) 0%, rgba(22,30,41,1) 50%, rgba(15,20,26,1) 100%); 
+}
+
+.hero-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.hero-form h4 {
+    font-size: 1.4rem;
+}
+
+.hero-form label {
+    margin-right: 1rem;
+    font-weight: 300;
+    color: #cecece;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/****** ABOUT US ******/
+.gradient {
+    background: rgb(15,20,26);
+    background: linear-gradient(270deg, rgb(15, 20, 26) 0%, rgb(17, 25, 36) 50%, rgb(15, 20, 26) 100%);
+    background-color: rgba(0, 0, 0, 0);
+}
+.ab-p {
+    color: #d7d7d7;
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+/****** MODELS GALLERY ******/
+.box {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-img {
+    position: relative;
+}
+
+.box-img img {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.nsfw {
+    position: absolute;
+    top: 0;
+    background-color: #161e29;
+    padding: 0.4rem 1rem;
+    border-bottom-right-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.show-nsfw {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 50%;
+    padding: 0.9rem;
+}
+
+.show-nsfw span {
+    background-color: var(--color-primary);
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.media-type {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #161e29;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.box-desc {
+    padding: 1rem 0.5rem;
+    background-color: #161e29;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+/****** CONTACT US ******/
+.contact-box h6 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.contact-box a, p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1;
+}
