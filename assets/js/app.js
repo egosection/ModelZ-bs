@@ -6,6 +6,8 @@ document.querySelector('.hero form').addEventListener('submit', (e) => {
     const phoneNumber = e.target.phone.value;
     const email = e.target.email.value;
 
+    message.classList.remove('p-error', 'p-success');
+
     if(!fullName || !phoneNumber || !email) {
         message.classList.add('p-error');
         message.textContent = 'All fields are required!';
