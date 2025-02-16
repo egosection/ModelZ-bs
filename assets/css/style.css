@@ -194,6 +194,24 @@ header button {
     text-transform: uppercase;
 }
 
+.p-error {
+    color: #ff5666;
+    border: 1px solid #ff5666;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    transition: 300ms;
+}
+
+.p-success {
+    color: #8bcc3d;
+    border: 1px solid #8bcc3d;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    transition: 300ms;
+}
+
 /****** ABOUT US ******/
 .gradient {
     background: rgb(15,20,26);
