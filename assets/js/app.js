@@ -1,4 +1,5 @@
 // Form validation
+
 document.querySelector('.hero form').addEventListener('submit', (e) => {  
     const message = document.querySelector('.error-msg');
     e.preventDefault();
@@ -27,4 +28,24 @@ document.querySelector('.hero form').addEventListener('submit', (e) => {
     e.target.phone.value = '';
     e.target.email.value = '';
   
+});
+
+//IntersectionObserver
+
+const h3Elements = document.querySelectorAll('h3');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.remove('fadeOut')
+            entry.target.classList.add('fadeIn')
+        } else {
+            entry.target.classList.remove('fadeIn')
+            entry.target.classList.add('fadeOut')
+        }
+    });
+});
+
+h3Elements.forEach((el) => {
+    observer.observe(el);
 });
