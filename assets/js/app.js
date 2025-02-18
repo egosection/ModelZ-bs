@@ -49,3 +49,16 @@ const observer = new IntersectionObserver((entries) => {
 h3Elements.forEach((el) => {
     observer.observe(el);
 });
+
+
+//Modals without bs (not ready)
+const popups = document.querySelectorAll('.popup');
+const overlay = document.querySelector('.modal-overlay');
+const ok = document.querySelector('.ok');
+
+
+popups.forEach((el) => {
+    el.addEventListener('click', (e) => {   
+        overlay.classList.add('op-1');
+    })   
+});

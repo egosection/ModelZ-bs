@@ -18,6 +18,10 @@ a {
     background-color: #0f141a !important;
 }
 
+.fixed-top {
+    z-index: 4 !important;
+}
+
 .navbar-brand {
     width: 100px !important;
 }
@@ -312,4 +316,53 @@ header button {
     opacity: 0;
     transition: all 0.7s ease-in-out;
     transform: translateX(-50%);
+}
+
+.modal-popup {
+    position: fixed;
+    background-color: #33550a;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    z-index: 10;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+}
+
+.modal-popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    width: 300px;
+    padding: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.modal-controlz {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity 200ms ease-in-out 200ms;
+    z-index: -1;
+}
+
+.op-1 {
+    opacity: 1 !important; 
+    z-index: 5;
+}
+
+.ds-none {
+    display: none !important;
 }
